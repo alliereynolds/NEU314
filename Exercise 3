@@ -1,0 +1,25 @@
+img = imread("el-capitan.png")
+imshow(convert(Array{Float32,3}, img))
+
+########
+function image_colors("el-capitan.png")
+    imread("el-capitan.png");
+    imshow("el-capitan.png");
+    red = [:,:,1]
+    green = [:,:,2]
+    blue = [:,:,3]
+end
+
+"""
+function image_colors()
+
+Sorts different color channels in an image into separate variables and returns those variables.
+
+Args:
+    red = number of red channels
+    green = number of green channels
+    blue = number of blue channels
+
+Returns
+    out = separate numbers for each channel color
+"""
